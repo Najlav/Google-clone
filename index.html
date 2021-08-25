@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<link rel="stylesheet" type="text/css" href="Styles/Style.css">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+        <title>Google Clone</title>
+    </head>
+    <body>
+    	<ul>
+    		<li class='text'>Gmail</li>
+    		<li class='text'>Images</li>
+    		<li class='text'><i class="fa fa-th"></i></li>
+    		<li><button>Sign in</button></li>
+    	</ul>
+    	<div id=container>
+    	  <div id=logo>
+    		<img src='images/logo.png'>
+    	  </div>
+         <form action="https://google.com/search">
+        	<i class="fa fa-search"></i>
+            <input id='search-input' autocomplete="off" type="search" name="q" placeholder="Search Google or type URL">
+            <img onclick="startRecognition()" src="https://i.imgur.com/qJaCSqq.png">
+
+            <div class="buttons">
+               <button type="submit">Google Search</button>
+               <button><a href="https://www.google.com/doodles">I'm Feeling Lucky</a></button>
+            </div>
+         </form>
+        </div>    
+    </body>
+</html>
+
+<script type="text/javascript" src="SpeechRecognition.js"></script>
+

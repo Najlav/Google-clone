@@ -1,0 +1,138 @@
+$box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+$box-shadow-hvr:0 3px 8px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+
+body {
+    font-family: Roboto, system-ui, sans-serif;
+    font-size: 81.25%;
+}
+
+#container{
+	align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 44px ;
+    position: relative;
+    z-index: 1;
+}
+#logo img{
+	margin-bottom: 38px;
+    height: 92px;
+    width: 272px;
+    padding-top: 108px;
+	
+}
+
+form{
+	position: relative;
+
+		input{
+			appearance: auto;
+    		box-sizing: border-box;
+    		padding: 22px 52px;
+    		border: 1px solid #f2f2f2;
+    		box-shadow: $box-shadow;
+    		border-radius: 25px;
+    		width: 561px;
+    		height: 42px;
+    		position: relative;
+    		outline: none;
+    			&:hover{
+					box-shadow: $box-shadow-hvr;
+				}
+			}
+
+		i{
+    		height: 100%;
+    		left: 20px;
+    		position: absolute;
+    		top: 17px;
+    		z-index: 2;
+    		color: grey;
+    	}
+
+    	img{
+    		width: 21px;
+    		height: auto;
+    		margin: 0;
+    		right: 18px;
+    		top:12px;
+    		position: absolute;
+    		cursor: pointer;
+    	}
+}
+
+ul{
+	list-style: none;
+	display: flex;
+	right: 0px;
+	z-index: 3;
+	top: 0px;
+	position: absolute;
+	cursor: pointer;
+
+		li{
+			padding-left: 15px;
+		  }
+
+		.text{
+			margin-top: 8px;
+		 		&:hover {
+        			text-decoration: underline;
+      			}
+		}
+
+		li button{
+			background: #1a73e8;
+			font-size: 14px;
+			line-height: 16px;
+			padding: 9px 23px;
+        	text-align: center;
+        	font-weight: 500;
+        	outline: none;
+        	margin: 8px;
+        	margin-top: 0px;
+        	color: white;
+        	border-radius: 2px;
+        	border: none;
+        	cursor: pointer;
+		}
+
+		li i{
+		 	color: #5f6368;
+         	opacity: 1;
+         	size: 20px;
+		}
+}
+
+.buttons{
+	    display: block;
+        text-align: -webkit-center;
+        margin-top: 58px;
+
+
+        button{
+        	background-color: #f8f9fa;
+    		border: 1px solid #f8f9fa;
+    		border-radius: 4px;
+    		color: #3c4043;
+    		font-family: arial,sans-serif;
+    		font-size: 14px;
+    		margin: 11px 4px;
+    		padding: 0 16px;
+    		line-height: 27px;
+    		height: 36px;
+    		min-width: 54px;
+    		text-align: center;
+    		cursor: pointer;
+    		user-select: none;
+    			&:hover{
+					box-shadow: $box-shadow-hvr;
+				}
+			}
+
+    	a{
+    		text-decoration: none;
+        	color: inherit;
+        }
+}
+
